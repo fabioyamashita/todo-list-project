@@ -1,0 +1,12 @@
+@media (max-width: 35em) {
+  .heading {
+    padding: 4rem 5rem 3rem 5rem;
+  }
+}
+
+@media (max-width: 28em) {
+  html {
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fabio Yamashita" />
+    <meta name="description" content="Bulb ON-OFF exercise" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <script
+      src="https://kit.fontawesome.com/e651aa4165.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/script.js" defer></script>
+
+    <title>To-do List</title>
+  </head>
+  <body>
+    <main class="to-do-list-container">
+      <div class="heading">
+        <h1 class="heading-text">to-do list</h1>
+        <img
+          class="check-sign"
+          src="./img/check-mark.png"
+          alt="green check sign"
+        />
+      </div>
+
+      <section class="tasks-container">
+        <form class="to-do-form" name="add-to-do">
+          <button class="btn btn-submit" type="submit">
+            <i class="submit-icon fa-solid fa-plus"></i>
+          </button>
+          <input
+            type="text"
+            id="to-do-text"
+            placeholder="Add task"
+            class="input-area"
+            name="to-do-text"
+          />
+        </form>
+
+        <ul class="to-do-list">
+          <p class="empty-list-text">Your to-do list will appear here :)</p>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+/* ----------------------- */
+/* GENERAL */
+:root {
+  --default-body-bg-clr: #fdfdfd;
+  --default-background-color: rgba(248, 248, 248, 0.33);
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --default-text-color: #212529;
+  --clr-btn-add: #ff6b6b;
+  --clr-btn-check: #2f9e44;
+  --clr-btn-delete: #495057;
+  --clr-border: #adb5bd;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-family);
+  color: var(--default-text-color);
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.6rem;
+
+  background-color: var(--default-body-bg-clr);
+}
+
+/* ----------------------- */
+/* MAIN */
+.to-do-list-container {
+  margin: 5rem 2rem;
+  padding: 0 0 3rem 0;
+  border-radius: 20px;
+
+  min-height: 50%;
+  max-width: 500px;
+
+  background: var(--default-background-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* backdrop-filter: blur(4.7px); */
+  /* -webkit-backdrop-filter: blur(4.7px); */
+  border: 1px solid rgba(248, 248, 248, 0.22);
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 10rem 3rem 10rem;
+
+  gap: 2rem;
+}
+
+.heading-text {
+  font-size: 5rem;
+  font-weight: 700;
+
+  text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.check-sign {
+  width: 4.6rem;
+}
+
+/* ----------------------- */
+/* FORM */
+
+.tasks-container {
+  padding: 0 4rem;
+}
+
+.to-do-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 0.4rem; */
+  width: 92%;
+
+  margin: 0 auto 2rem auto;
+}
+
+.input-area {
+  flex: 1;
+  font-size: 1.6rem;
+  font-family: var(--font-family);
+  padding: 0.8rem;
+
+  background: var(--default-background-color);
+  border: none;
+}
+
+.input-area:focus {
+  outline: none;
+}
+
+.btn {
+  width: 2.8rem;
+  height: 2.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.btn-submit,
+.btn-delete {
+  background: var(--default-background-color);
+  border: none;
+}
+
+/* To-Do List */
+.empty-list-text {
+  display: block;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.submit-icon,
+.list-icon {
+  font-size: 1.8rem;
+}
+
+.submit-icon {
+  color: var(--clr-btn-add);
+}
+
+.list-icon-delete {
+  color: var(--clr-btn-delete);
+}
+
+.to-do-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 0 1.4rem 0;
+}
+
+.btn-check {
+  width: 2rem;
+  height: 2rem;
+
+  border: 1px solid var(--clr-border);
+  border-radius: 50%;
+}
+
+.list-icon-check {
+  font-size: 1.2rem;
+  color: var(--clr-btn-check);
+}
+
+.to-do-list .to-do-item:first-of-type {
+  border-top: 1px solid var(--clr-border);
+}
+
+.to-do-item {
+  padding: 1rem 1.4rem;
+  width: 90%;
+
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.to-do-item-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+
+.to-do-text {
+  flex: 1;
+  line-height: 1.2;
+  color: var(--default-text-color);
+}
+
+.to-do-text:focus {
+  outline: none;
+}
+
+/* ----------------------- */
+/* CLEAR ALL */
+.clear-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  width: 90%;
+  gap: 1rem;
+}
+
+.clear-all-text {
+  flex: 1;
+}
+
+.clear-all-btn {
+  font-size: 1.6rem;
+  font-family: var(--font-family);
+  color: var(--default-text-color);
+
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1rem 2rem;
+
+  border: 1px solid var(--clr-border);
+  border-radius: 5px;
+  background: var(--clr-btn-delete);
+  color: #f8f9fa;
+}
+
+.clear-all-btn:hover {
+  background-color: #72787ef8;
+}
