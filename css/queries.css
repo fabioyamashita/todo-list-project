@@ -9,4 +9,22 @@
     /* 9px / 16px = 56.25% */
     font-size: 56.25%;
   }
+
+  .tasks-container {
+    padding: 0 1.8rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .heading {
+    padding: 4rem 5rem 3rem 5rem;
+  }
+
+  .heading-text {
+    font-size: 3.6rem;
+  }
+
+  .check-sign {
+    width: 3rem;
+  }
 }

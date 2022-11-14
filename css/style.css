@@ -36,6 +36,7 @@ body {
   border-radius: 20px;
 
   min-height: 50%;
+  max-width: 90vw;
   max-width: 500px;
 
   background: var(--default-background-color);
@@ -77,7 +78,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 0.4rem; */
   width: 92%;
 
   margin: 0 auto 2rem auto;
