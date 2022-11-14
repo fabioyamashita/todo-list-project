@@ -1,6 +1,6 @@
 # To-do List Project
 
-A basic To-do list project built with HTML, CSS and JavaScript (Vanilla JS).
+A basic To-do list built with HTML, CSS and JavaScript (Vanilla JS).
 
 
 # Solution
